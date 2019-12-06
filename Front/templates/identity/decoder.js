@@ -1,38 +1,66 @@
 
 
 function cargaGrupos(){
-  var form_data = new FormData();
-  form_data.append("idGroup", "J5");
+
   $.ajax({
-   url:"http://localhost:8000/getMatchings?123", //?id
+   url:"http://10.100.66.182:8000/getMatchings?45", //?id
    method:"GET",
    data: null,
-   contentType: false,
-   cache: false,
-   processData: false,
+   dataType: "json",
    success:function(data){
        console.log(data);
-       var datos= JSON.parse(data);
        $('#idGroup').html('');
 
        $('#idGroup').append('<ul class="list-group">');
-       for (var i = 0; i < datos['groups'].length; i++) {
+       for (var i = 0; i < data['groups'].length; i++) {
 
          var res='';
          res+='<li class="list-group-item">';
-         res+=datos['groups'][i][0];
-         for (var j = 1; j < Object.keys(datos['groups'][i]).length; j++) {
+         res+=data['groups'][i][0];
+         for (var j = 1; j < Object.keys(data['groups'][i]).length; j++) {
            res+=', ';
-           res+=datos['groups'][i][j];
+           res+=data['groups'][i][j];
          }
          res+='</li>';
          $('#idGroup').append(res);
-         alert(res);
        }
-       // $('#idGroup').append(datos['groups'][0]);
+       // $('#idGroup').append(data['groups'][0]);
        $('#idGroup').append('</ul>');
 
 
    }
-  });
+
+  }).fail( function( jqXHR, textStatus, errorThrown ) {
+
+  if (jqXHR.status === 0) {
+
+    alert('Not connect: Verify Network.');
+
+  } else if (jqXHR.status == 404) {
+
+    alert('Requested page not found [404]');
+
+  } else if (jqXHR.status == 500) {
+
+    alert('Internal Server Error [500].');
+
+  } else if (textStatus === 'parsererror') {
+
+    alert('Requested JSON parse failed.');
+
+  } else if (textStatus === 'timeout') {
+
+    alert('Time out error.');
+
+  } else if (textStatus === 'abort') {
+
+    alert('Ajax request aborted.');
+
+  } else {
+
+    alert('Uncaught Error: ' + jqXHR.responseText);
+
+  }
+
+});
 }
