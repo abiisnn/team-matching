@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">team-matching</string>
+    <string name="basic_group_id">Group ID:</string>
+    <string name="basic_input_group_id">your group id here</string>
+    <string name="basic_username">Username</string>
+    <string name="basic_input_username">your username here</string>
+    <string name="basic_name">Name</string>
+    <string name="basic_input_name">your name here</string>
+
+    <string name="skills_header">Select the skills you consider to have</string>
+    <string name="skills_example_skill">ejemploxDxD</string>
+
+    <string name="personality_instruction">Once finished the test, please press continue.</string>
+
+    <string name="send_done">Done :)</string>
+    <string name="send_again">Try Again</string>
+    <string name="send_start_button">New Form</string>
+
+    <string name="nextButton">Continue</string>
+</resources>
