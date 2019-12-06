@@ -1,9 +1,9 @@
 
 
 function cargaGrupos(){
-
+  var idG=$('#idGrupo').val();
   $.ajax({
-   url:"http://10.100.66.182:8000/getMatchings?45", //?id
+   url:"http://10.100.66.182:8000/getMatchings?"+idG, //?id
    method:"GET",
    data: null,
    dataType: "json",
