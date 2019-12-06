@@ -2,8 +2,9 @@
 
 function cargaGrupos(){
   var idG=$('#idGrupo').val();
+  var sizeG=$('#size').val();
   $.ajax({
-   url:"http://10.100.66.182:8000/getMatchings?"+idG, //?id
+   url:"http://10.100.66.182:8000/getMatchings?"+idG+"-"+sizeG, //?id
    method:"GET",
    data: null,
    dataType: "json",

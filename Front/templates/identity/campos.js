@@ -34,6 +34,7 @@ function cargaFormulario(){
    dataType: "text",
    success:function(data){
        alert(data);
+			 location.assign("C:/xampp/htdocs/Git/team-matching/Front/templates/identity/manager.html");
    }
 
   }).fail( function( jqXHR, textStatus, errorThrown ) {
