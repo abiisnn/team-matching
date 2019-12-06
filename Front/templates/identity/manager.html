@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Identity by HTML5 UP</title>
+		<title>Manager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,48 +15,39 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar">
-								<img src="images/manager.jpg" alt="" style="width: 120px; height: 120px;" />
-							</span>
-							<h1>Sergio Gabriel Sanchez</h1>
-							<p>Manager</p>
-						</header>
-						
-						<hr />
-						<h2>Get matches</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="idGrupo" id="idGrupo" placeholder="Id group" />
-								</div>
-							</div>
-							<ul class="actions special">
-								<li><a href="#" class="button">Get match!</a></li>
-							</ul>
-						</form>
-						<hr />
-						
-						<!-- <footer>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter">Twitter</a></li>
-								<li><a href="#" class="icon brands fa-instagram">Instagram</a></li>
-								<li><a href="#" class="icon brands fa-facebook-f">Facebook</a></li>
-							</ul>
-						 --></footer>
-					</section>
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main">
+				<header>
+					<span class="avatar">
+						<img src="images/manager.jpg" alt="" style="width: 120px; height: 120px;" />
+					</span>
+					<h1>Sergio Gabriel Sanchez</h1>
+					<p>Manager</p>
+				</header>
+				
+				<hr />
+				<h2>Get matches</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<input type="text" name="idGrupo" id="idGrupo" placeholder="Id group" />
+						</div>
+					</div>
+					<ul class="actions special">
+						<button onclick="cargaGrupos()" class="button" name="button">Get groups!</button>
+					</ul>
+				</form>
+				<hr />
+			</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>Team-maching</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		</div>
 
 		<!-- Scripts -->
 			<script>
@@ -65,6 +56,6 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
-
+			<script src="decoder.js"></script>
 	</body>
 </html>
