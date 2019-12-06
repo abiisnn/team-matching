@@ -14,6 +14,12 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<!--Import jQuery before materialize.js-->
+       <!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+      
 </head>
 
 <body class="is-preload">
@@ -26,12 +32,10 @@
 				<span class="avatar">
 					<img src="images/manager.jpg" alt="" style="width: 120px; height: 120px;" />
 				</span>
-				<h1>Sergio Gabriel Sanchez</h1>
-				<p>Manager</p>
+				<h3>Sergio Sanchez</h3><p>(Manager)</p>
 			</header>
 
-			<hr />
-			<h2>Get matches</h2>
+			<h5><b>Get matches</b></h5>
 			<form method="post" action="#">
 				<div class="fields">
 					<div class="field">
@@ -44,10 +48,11 @@
 				<ul class="actions special">
 					<button type="button" onclick="cargaGrupos()" class="button" name="button">Get groups!</button>
 				</ul>
-				<div id="idGroup" class="">
-				</div>
 			</form>
 			<hr />
+			<div id="idGroup" class="">
+				
+			</div>
 		</section>
 
 		<!-- Footer -->
