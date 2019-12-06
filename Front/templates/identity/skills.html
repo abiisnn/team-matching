@@ -1,67 +1,74 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Manager</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-		<div id="wrapper">
-			<!-- Main -->
-			<section id="main">
-				<header>
-					<span class="avatar">
-						<img src="images/manager.jpg" alt="" style="width: 120px; height: 120px;" />
-					</span>
-					<h1>Sergio Gabriel Sanchez</h1>
-					<p>Manager</p>
-				</header>
-				
-				<hr />
-				<h2>Get matches</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<input type="text" name="idGrupo" id="idGrupo" placeholder="Id group" />
-						</div>
-						<div class="field">
-							<input type="text" name="skills" id="skills" placeholder="# skills" />
-						</div>
-					</div>
-					<ul class="actions special">
-						<li><a onclick="crearCampos()" class="button">Write Skills</a></li>
-					</ul>
-					<div class="fields" id="putFields">
-						
-					</div>
-					<ul class="actions special">
-						<button onclick="cargaFormulario()" class="button" name="button">Create!</button>
-					</ul>
-				</form>
-				<hr />
-			</section>
+<head>
+	<title>Manager</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+</head>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="copyright">
-					<li>Team-maching</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Main -->
+		<section id="main">
+			<header>
+				<span class="avatar">
+					<img src="images/manager.jpg" alt="" style="width: 120px; height: 120px;" />
+				</span>
+				<h1>Sergio Gabriel Sanchez</h1>
+				<p>Manager</p>
+			</header>
+
+			<hr />
+			<h2>Get matches</h2>
+			<form method="post" action="#">
+				<div class="fields">
+					<div class="field">
+						<input type="text" name="idGrupo" id="idGrupo" placeholder="Id group" />
+					</div>
+					<div class="field">
+						<input type="text" name="skills" id="skills" placeholder="# skills" />
+					</div>
+				</div>
+				<ul class="actions special">
+					<li><a onclick="crearCampos()" class="button">Write Skills</a></li>
 				</ul>
-			</footer>
-		</div>
+				<div class="fields" id="putFields">
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-			<script src="campos.js"></script>
-			<script src="decoder.js"></script>
-	</body>
+				</div>
+				<ul class="actions special">
+					<button type="button" onclick="cargaFormulario()" class="button" name="button">Create!</button>
+				</ul>
+			</form>
+			<hr />
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>Team-maching</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function() {
+				document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+			});
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+	<script src="campos.js"></script>
+	<script src="decoder.js"></script>
+</body>
+
 </html>
