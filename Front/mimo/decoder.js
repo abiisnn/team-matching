@@ -4,9 +4,9 @@ function cargaGrupos(){
   var form_data = new FormData();
   form_data.append("idGroup", "J5");
   $.ajax({
-   url:"cargajson.php", //?id
-   method:"POST",
-   data: form_data,
+   url:"http://localhost:8000/getMatchings?123", //?id
+   method:"GET",
+   data: null,
    contentType: false,
    cache: false,
    processData: false,
