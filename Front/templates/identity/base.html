@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- JQUERY Y AJAX -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <div id="registries" class="">
+
+  </div>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var linkList = ["713-searleser97-sergio-1,3,5-ISTJ",
+      "713-abiisnn-abigail-3,7,8,9-ISTJ",
+      "713-shadowmimo-ulises-1,5,8,7-ESFP",
+      "713-marquess-abraham-1,5,6,9,10-ESFJ",
+      "713-alaneos777-alan-1,2,8,6,9,10-ENFP",
+      "713-edward-edward-1,2,3,4-ENFP"
+    ];
+    $.each(linkList, function(i, item) {
+      alert("http://10.100.66.182:8000/save?" + linkList[i]);
+      $.ajax({
+        url: "http://10.100.66.182:8000/save?" + linkList[i], //?id
+        method: "GET",
+        data: null,
+        dataType: "text",
+        success: function(data) {
+          console.log(data);
+        }
+
+      })
+    });
+
+  });
+</script>
+
+</html>
