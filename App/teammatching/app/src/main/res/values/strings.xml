@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">команда синхронизма</string>
+    <string name="basic_group_id">ID группы:</string>
+    <string name="basic_input_group_id">...</string>
+    <string name="basic_username">имя пользователя</string>
+    <string name="basic_input_username">...</string>
+    <string name="basic_name">название</string>
+    <string name="basic_input_name">...</string>
+
+    <string name="skills_header">Выберите навыки, которые вы считаете нужными</string>
+    <string name="skills_example_skill">ejemploxDxD</string>
+
+    <string name="personality_instruction">После завершения теста нажмите «Продолжить».</string>
+
+    <string name="send_done">Выполнено :)</string>
+    <string name="send_again">Попробуйте еще раз</string>
+    <string name="send_start_button">Новая форма</string>
+
+    <string name="nextButton">Продолжать</string>
+</resources>
