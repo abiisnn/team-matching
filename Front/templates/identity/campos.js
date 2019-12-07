@@ -1,4 +1,4 @@
-var skillsList=["teamwork","adaptability","problemsolving", "creativity", "presentation skills", "interpersonal skills" , "algorithms skills","wireless comunications","artificial inteligence","natural language processing"];
+var skillsList=["Teamwork","Adaptability","Problemsolving", "Creativity", "Presentation skills", "Interpersonal skills" , "Algorithms skills","Wireless Comunications","Artificial inteligence","Natural language processing", "Greedy Algorithm", "Dynamic Problems", "Leadership", "FTT", "ASM Cards", "I.T Governance"];
 
 function crearCampos() {
 	var n = document.getElementById("skills").value;
