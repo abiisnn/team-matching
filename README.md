@@ -31,9 +31,9 @@ We got inspired by Competitive Programming, because the creation of new teams is
 <p>The team was made up of:</p>
 <ul>
 <li><a href="https://github.com/abiisnn">Abigail </a> (Her ICPC team was #include&lt;witech&gt;)</li>
-<li><a href="https://github.com/abiisnn">Enya </a> (Her ICPC team was Vaporub.exe)</li>
-<li><a href="https://github.com/abiisnn">Sergio </a> (His ICPC team was 404. Globito not found)</li>
-<li><a href="https://github.com/abiisnn">Ulises</a> (His ICPC team was Error. “Team Name” not defined.)</li>
+<li><a href="https://github.com/equetzal">Enya </a> (Her ICPC team was Vaporub.exe)</li>
+<li><a href="https://github.com/searleser97">Sergio </a> (His ICPC team was 404. Globito not found)</li>
+<li><a href="https://github.com/shadowmimo">Ulises</a> (His ICPC team was Error. “Team Name” not defined.)</li>
 </ul>
 <p>So we combined all out ICPC team names to get</p>
 <pre class=" language-bash"><code class="prism  language-bash">globirubtech.exe --not-defined
